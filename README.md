@@ -1,4 +1,5 @@
 # Child-Labor-Rotating-Chores-Home-Assistant
+![Screenshot 2024-11-20 214836](https://github.com/user-attachments/assets/cea71574-16ce-493b-b143-f13376fcee65)
 
 ### My goals: 
 
@@ -50,6 +51,7 @@
  	dashboard unless you're actively editing.
 
  ## Step 1a: Create Helpers for each chore FOR EACH child.
+![Screenshot 2024-11-20 215044](https://github.com/user-attachments/assets/603b6e39-1614-4c10-afa4-266f7a08250b)
 
  (If you don't make the chore per each child then when one completes them- it'll mark it off for everyone. (My kids figured this out real fast and it was back to the drawing board.)
  For example: I have four groups; Kitchen Chores, Dog Chores, Bathroom Chores, and Vacuum Chores. In addition, I have tablet tasks (tasks they need
@@ -61,7 +63,8 @@
  So I then created Clear_Table_Karen, Clear_Table_Kara, etc. I kept the names all very similar- it helps later.)
  
  ## Step 1b: Add 'labels'
- 
+ ![Screenshot 2024-11-20 215002](https://github.com/user-attachments/assets/b4c3b42b-5fea-4ab4-9158-3a60bfc23379)
+
  Click settings > devices and services > entities.
  Choose the chore and open it. 
  Click the gear near the top.
@@ -80,7 +83,8 @@
  ## Step 3: Scripts
 
  Now we make a script for the adding, removing, and resetting of points.
- 
+ ![Screenshot 2024-11-20 215124](https://github.com/user-attachments/assets/1f45e3b8-9a8a-4989-846f-2075844b5eb1)
+
  Click settings > Automations and Scenes > Scripts.
  Click add script.
  Create new script.
@@ -119,6 +123,7 @@
  (This has nothing to do with points! This is just resetting all the chores.)
 
  Click Then Do > Helpers > Input boolean > Turn off > Choose gray "choose label" and choose "chores".
+![Screenshot 2024-11-20 215203](https://github.com/user-attachments/assets/769462f4-9887-4263-98a0-a827185774b6)
 
  ## Step 5: Workday Automation
 
@@ -127,6 +132,8 @@
  In the first line- 'Workday' uncheck everything except Monday.
  Under excludes, add everything except Monday.
  Repeat process for every day.
+![Screenshot 2024-11-20 215401](https://github.com/user-attachments/assets/ce3973d2-96c0-4659-b02a-d0a663dd5b2b)
+![Screenshot 2024-11-20 215352](https://github.com/user-attachments/assets/ce0eba75-d2e5-40ca-b387-2fa92afe2a1d)
 
  ## Step 6: Weekly Rotation
 
@@ -140,8 +147,10 @@
  Go to settings > devices and services > create helper > dropdown
  We are going to make one for each child. For the first child, make each categories and label it as Chore Visibility Off Reset (Child's Name).
  You can add labels for each child after by going back to entities and choosing their label if desired just like we did with chores.
+![Screenshot 2024-11-20 215510](https://github.com/user-attachments/assets/f8559e0a-e7dd-41e6-9ceb-a91b9b7f8f15)
 
  ### Step 6c: Create the time triggers
+![Screenshot 2024-11-20 215546](https://github.com/user-attachments/assets/73c90531-4a7c-41bb-9e91-7067cf193f1d)
 
  Go to settings > devices and services > automations > create automation > create new automation
  Under when, choose add trigger. Choose entity and then choose state. Type Monday for your state. This should pull up your workday entities we created.
@@ -178,6 +187,7 @@
  (I find it easier to open a second web browser window- open the test view in this second window as well. You're going to be copying and pasting A LOT.)
  
  ### 8a. Daily and Tablet Chore Cards
+ ![Screenshot 2024-11-20 215640](https://github.com/user-attachments/assets/3902d48a-0223-4c96-af8e-c4efa83a8458)
 
  Go to another column in your test view. Click to add a new card and choose vertical stack.
  In the other window- choose the daily chores card and copy the yaml. (Highlight and click CTRL+C.)
@@ -187,7 +197,7 @@
  Click save. This will be the daily stack of cards that will be always visible every day without changing.
  
  ### 8b. Now let's make your conditional cards that change.
-
+![Screenshot 2024-11-20 215703](https://github.com/user-attachments/assets/6fd7dc92-fd30-4822-87b4-7d579aacbee7)
  In the window with the new cards created, click underneath to start a new card. Choose conditional. Click the 'card' header. 
  Go back to the window you're copying from and choose one of the rotating chore categories (kitchen, etc). Copy the yaml.
  Go back to the other window, choose manual card, remove  what's typed there and paste.
@@ -201,6 +211,7 @@
  Repeat this process (8b) for THIS child's other categories, making sure that you choose the right chore visibility category for each.
  
  ### 8c. Laundry card
+![Screenshot 2024-11-20 215832](https://github.com/user-attachments/assets/5ee73d31-3930-47a0-b5ce-881a12ca0c59)
 
  Lets do the laundry card. This card only shows up once per week.
  Go under the cards you've created and click to add another card. 
@@ -211,7 +222,8 @@
  You should now have a column of chore categories. You can now copy this cards and paste into this child's view.
 
  ## 9. Next Child
- 
+ ![Screenshot 2024-11-20 215924](https://github.com/user-attachments/assets/d6cdd04b-ea02-4e11-b45f-e2cb0a880873)
+
  Now, go back to your test view. You are going to go into each card, go into the code editor, and change the entities for every
  chore to the next child. You do this by simply deleting their name and by starting to type the next child's name, it should start to auto populate.
  Do this for every chore. Change the laundry date for this child. Copy the cards and place into the next child's view. 
