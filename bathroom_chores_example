@@ -1,0 +1,27 @@
+type: conditional
+conditions:
+  - condition: and
+    conditions:
+      - condition: state
+        entity: input_boolean.chore_card_visible
+        state: "on"
+      - condition: state
+        entity: input_select.chore_visibility_off_reset_karen
+        state: Bathroom Chores
+card:
+  type: custom:expander-card
+  title: Bathroom Chores
+  cards:
+    - type: entities
+      entities:
+        - entity: input_boolean.wipe_bathroom_counters_karen
+          name: Bathroom Counters and Sinks in Both Bathrooms
+        - entity: input_boolean.scrub_toilet_karen
+          name: Scrub Toilets in Both Bathrooms
+  gap: "0"
+  padding: "0"
+  child-padding: "0"
+  title-card:
+    type: picture
+    image: >-
+      https://static.wixstatic.com/media/5707c2_869f818b9bdd4929994f01ca7ec21c55~mv2.png
