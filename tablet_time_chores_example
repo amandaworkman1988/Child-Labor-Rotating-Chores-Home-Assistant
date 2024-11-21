@@ -1,0 +1,20 @@
+type: custom:expander-card
+title: Tablet Time Chores
+cards:
+  - type: entities
+    entities:
+      - entity: input_boolean.20_mins_ixl_karen
+        name: 20 Mins IXL
+      - entity: input_boolean.20_mins_outside_activity_karen
+        name: 20 Mins Outside/Activity
+      - entity: input_boolean.20_mins_reading_karen
+        name: 20 Mins Reading
+      - entity: input_boolean.homework_karen
+        name: Homework
+gap: "0"
+padding: "0"
+child-padding: "0"
+title-card:
+  type: picture
+  image: >-
+    https://static.wixstatic.com/media/5707c2_2f3c7d0f26d74fe3bb02d7dad6d987ca~mv2.png
