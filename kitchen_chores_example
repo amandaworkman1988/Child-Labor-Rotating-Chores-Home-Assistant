@@ -1,0 +1,29 @@
+type: conditional
+conditions:
+  - condition: and
+    conditions:
+      - condition: state
+        entity: input_boolean.chore_card_visible
+        state: "on"
+      - condition: state
+        entity: input_select.chore_visibility_off_reset_karen
+        state: Kitchen Chores
+card:
+  type: custom:expander-card
+  title: Kitchen Chores
+  cards:
+    - type: entities
+      entities:
+        - entity: input_boolean.put_away_dishes_karen
+          name: Empty Dishwasher
+        - entity: input_boolean.set_table_karen
+          name: Set Dinner Table
+        - entity: input_boolean.clean_table_kara
+          name: Clean Off Dinner Table
+  gap: "0"
+  padding: "0"
+  child-padding: "0"
+  title-card:
+    type: picture
+    image: >-
+      https://static.wixstatic.com/media/5707c2_0b87160477d348c482c07fc7e83b6eef~mv2.png
