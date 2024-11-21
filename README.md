@@ -1,4 +1,7 @@
 # Child-Labor-Rotating-Chores-Home-Assistant
+
+<a href="https://www.buymeacoffee.com/amandaworkb" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 https://buymeacoffee.com/amandaworkb
 
 ![Screenshot 2024-11-20 214836](https://github.com/user-attachments/assets/cea71574-16ce-493b-b143-f13376fcee65)
