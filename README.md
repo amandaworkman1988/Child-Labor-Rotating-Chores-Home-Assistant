@@ -230,14 +230,14 @@
 # Go back to your other window and copy the yaml for the laundry card and paste this in the card section of the conditional card.
 # Under conditions, choose entity state and the entity will be whatever day you want that child to do laundry. Type ON for the state.
 #
-# You should now have a column of chore categories. You can now copy this entire section and paste into this child's view.
+# You should now have a column of chore categories. You can now copy this cards and paste into this child's view.
 #
 #
 # 9. Next Child
 # 
 # Now, go back to your test view. You are going to go into each card, go into the code editor, and change the entities for every
 # chore to the next child. You do this by simply deleting their name and by starting to type the next child's name, it should start to auto populate.
-# Do this for every chore. Change the laundry date for this child. Copy the entire section and place into the next child's view. 
+# Do this for every chore. Change the laundry date for this child. Copy the cards and place into the next child's view. 
 #
 # Repeat for every child.
 #
