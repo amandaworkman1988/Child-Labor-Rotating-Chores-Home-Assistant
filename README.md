@@ -172,7 +172,6 @@
 #
 #
 # Step 7: Create cards
-# * (See canva instructions)
 #
 # (To make this easy and not as repetitious, use the TEST view and create a template card that can be copied into each
 # child's view individually. We are going to create each individual card for categories (daily, laundry, bathroom, etc) and then add
@@ -188,9 +187,7 @@
 # 
 # You should now have a column full of cards for one particular child.
 #
-# (*** Again, I used picture cards for my titles. If you don't want to do this- make it easier and change that section to a markdown card. 
-# See my yaml example called title vs picture card yaml.)
-#
+# (*** Again, I used picture cards for my titles. The pictures are available within the yaml online.)
 #
 #
 # 8. Copy To Expander and Vertical Stack Cards
