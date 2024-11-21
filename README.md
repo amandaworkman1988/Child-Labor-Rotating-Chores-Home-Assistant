@@ -1,4 +1,6 @@
 # Child-Labor-Rotating-Chores-Home-Assistant
+https://buymeacoffee.com/amandaworkb
+
 ![Screenshot 2024-11-20 214836](https://github.com/user-attachments/assets/cea71574-16ce-493b-b143-f13376fcee65)
 
 This uses instructions from https://www.facebook.com/JediAndi/ and https://community.home-assistant.io/t/created-a-chore-tracker-with-points-system-in-home-assistant/316175 modified for our family.
