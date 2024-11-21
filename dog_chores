@@ -1,0 +1,29 @@
+type: conditional
+conditions:
+  - condition: and
+    conditions:
+      - condition: state
+        entity: input_boolean.chore_card_visible
+        state: "on"
+      - condition: state
+        entity: input_select.chore_visibility_off_reset_karen
+        state: Dog Chores
+card:
+  type: custom:expander-card
+  title: Dog Chores
+  cards:
+    - type: entities
+      entities:
+        - entity: input_boolean.feed_dog_breakfast_karen
+          name: Feed Dog Breakfast
+        - entity: input_boolean.feed_dog_dinner_karen
+          name: Feed Dog Dinner
+        - entity: input_boolean.brush_and_play_with_dog_karen
+          name: Brush and Play with Dog
+  gap: "0"
+  padding: "0"
+  child-padding: "0"
+  title-card:
+    type: picture
+    image: >-
+      https://static.wixstatic.com/media/5707c2_40e1a733fa0d402cb6ca30829c4c1bbd~mv2.png
