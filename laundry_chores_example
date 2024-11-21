@@ -1,0 +1,20 @@
+type: conditional
+conditions:
+  - condition: state
+    entity: binary_sensor.monday
+    state: "on"
+card:
+  type: custom:expander-card
+  title: Laundry And Stairs
+  cards:
+    - type: entities
+      entities:
+        - entity: input_boolean.laundry_karen
+          name: Wash/Fold/Put Away Clothes
+  gap: "0"
+  padding: "0"
+  child-padding: "0"
+  title-card:
+    type: picture
+    image: >-
+      https://static.wixstatic.com/media/5707c2_869db1951d61421986a032fa52a6c74a~mv2.png
