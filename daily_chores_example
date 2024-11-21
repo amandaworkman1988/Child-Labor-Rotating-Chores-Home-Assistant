@@ -1,0 +1,20 @@
+type: custom:expander-card
+title: Daily Chores
+cards:
+  - type: entities
+    entities:
+      - entity: input_boolean.make_bed_karen
+        name: Make Bed
+      - entity: input_boolean.clean_bedroom_karen
+        name: Clean Bedroom
+      - entity: input_boolean.clean_stair_boxes_karen
+        name: Boxes on Stairs
+      - entity: input_boolean.feed_water_birds
+        name: Feed/Water Birds and Vac Upstairs Mess
+gap: "0"
+padding: "0"
+child-padding: "0"
+title-card:
+  type: picture
+  image: >-
+    https://static.wixstatic.com/media/5707c2_ec4488dfc1574a6981c3c76034a58f6d~mv2.png
