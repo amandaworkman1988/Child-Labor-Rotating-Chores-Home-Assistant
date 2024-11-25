@@ -165,8 +165,8 @@ This uses instructions from https://www.facebook.com/JediAndi/ and https://commu
  Then go to "Then Do" and click "add action" > helper > input boolean > turn on and choose Chore Card Visible as your entity. Save and call this Chore Card On.
 
  Go back to settings > devices and services > automations > create automation > create new automation.
- Under when, choose  add trigger >time and location > time > 12:01 am.
- Go to "And If" > add condition > time and location > time and choose Sunday. Leave times alone.
+ Under when, choose add trigger. Choose entity and then choose state. Type Sunday for your state. This should pull up your workday entities we created.
+ Under that, type in 'On' in the "TO" line.
  Then choose "Then Do" > add action> helper > input boolean > turn off and the entity is "Chore Card Visible".
  Add another action > helper > input select > next and choose each child's Chore Visibility Off Reset entity.
 
